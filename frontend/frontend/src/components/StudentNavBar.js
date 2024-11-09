@@ -4,11 +4,11 @@ import { Home, BookOpen, User } from 'lucide-react'; // Assuming you are using l
 import './NavBar.css';
 import logo from '../constants/Logo.png'; 
 
-const Navbar = () => {
+const StudentNavbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">
+        <Link to="/StudentDashboard">
           <img src={logo} alt="Logo" className="logo" />
         </Link>
       </div>
@@ -42,4 +42,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default StudentNavbar;

@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from '../components/NavBar';
+import StudentNavbar from '../components/StudentNavBar';
 
 const StudentAlerts = () => {
   return (
     <div>
-        <Navbar />
+        <StudentNavbar />
       <h1>Student Alerts</h1>
     </div>
   );

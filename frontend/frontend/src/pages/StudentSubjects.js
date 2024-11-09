@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/NavBar';
+import StudentNavbar from '../components/StudentNavBar';
 import { useNavigate } from 'react-router-dom';
 
 const StudentSubjects = () => {
@@ -7,7 +7,7 @@ const StudentSubjects = () => {
 
   return (
     <div>
-        <Navbar />
+        <StudentNavbar />
       <h1 className="text-2xl font-bold">Subjects</h1>
       <div className="button-container">
         <button
