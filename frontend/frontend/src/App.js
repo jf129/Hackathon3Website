@@ -6,6 +6,9 @@ import TeacherDashboard from "./pages/TeacherDashboard";
 import Maths from './pages/Maths';
 import CompSci from './pages/CompSci';
 import AI from './pages/AI';
+import StudentAlerts from "./pages/StudentAlerts";
+import StudentSubjects from "./pages/StudentSubjects";
+import Profile from "./pages/Profile";
 
 function App() {
     return (
@@ -16,6 +19,9 @@ function App() {
             <Route path="/Maths" element={<Maths />} />
             <Route path="/CompSci" element={<CompSci />} />
             <Route path="/AI" element={<AI />} />
+            <Route path="/StudentAlerts" element={<StudentAlerts />} />
+            <Route path="/StudentSubjects" element={<StudentSubjects />} />
+            <Route path="/Profile" element={<Profile />} />
         </Routes>
     );
 }

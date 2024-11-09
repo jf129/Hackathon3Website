@@ -13,27 +13,27 @@ const Navbar = () => {
       </div>
       <ul className="navbar-list">
         <li className="navbar-item">
-          <Link to="/" className="navbar-link">
+          <Link to="/StudentAlerts" className="navbar-link">
             <Home className="navbar-icon" />
-            Home
+            Alerts
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/Maths" className="navbar-link">
+          <Link to="/StudentSubjects" className="navbar-link">
             <BookOpen className="navbar-icon" />
-            Maths
+            Subjects
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/CompSci" className="navbar-link">
-            <BookOpen className="navbar-icon" />
-            Computer Science
+          <Link to="/StudentDashboard" className="navbar-link">
+            <Home className="navbar-icon" />
+            Dashboard
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/AI" className="navbar-link">
+          <Link to="/Profile" className="navbar-link">
             <User className="navbar-icon" />
-            AI Literacy
+            Profile
           </Link>
         </li>
       </ul>
