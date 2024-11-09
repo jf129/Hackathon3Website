@@ -7,26 +7,24 @@ import './StudentDashboard.css';
 const StudentDashboard = () => {
   // Sample data for the charts
   const lineData = [
-    { month: 'Jan', users: 400, sales: 240 },
-    { month: 'Feb', users: 300, sales: 139 },
-    { month: 'Mar', users: 200, sales: 980 },
-    { month: 'Apr', users: 278, sales: 390 },
-    { month: 'May', users: 189, sales: 480 },
-    { month: 'Jun', users: 239, sales: 380 },
+    { month: 'Mon', Minutes: 400},
+    { month: 'Tue', Minutes: 300},
+    { month: 'Wed', Minutes: 200},
+    { month: 'Thu', Minutes: 278},
+    { month: 'Fri', Minutes: 189},
+    { month: 'Sat', Minutes: 239},
   ];
 
   const barData = [
-    { category: 'Product A', value: 4000 },
-    { category: 'Product B', value: 3000 },
-    { category: 'Product C', value: 2000 },
-    { category: 'Product D', value: 2780 },
-    { category: 'Product E', value: 1890 },
+    { category: 'Maths', value: 4000 },
+    { category: 'Comp Sci', value: 3000 },
+    { category: 'AI', value: 2000 },
   ];
 
   const pieData = [
-    { name: 'Mobile', value: 400 },
-    { name: 'Desktop', value: 300 },
-    { name: 'Tablet', value: 200 },
+    { name: 'Flashcards', value: 400 },
+    { name: 'Definitions', value: 300 },
+    { name: 'Adaptive', value: 700 },
   ];
 
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
@@ -56,8 +54,7 @@ const StudentDashboard = () => {
                     }} 
                 />
                 <Legend />
-                <Line type="monotone" dataKey="users" stroke="#8884d8" />
-                <Line type="monotone" dataKey="sales" stroke="#82ca9d" />
+                <Line type="monotone" dataKey="Minutes" stroke="#02C5CB" />
                 </LineChart>
             </div>
             </div>
