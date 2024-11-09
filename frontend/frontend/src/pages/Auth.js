@@ -12,7 +12,7 @@ const Auth = () => {
     const handleSignInClick = async () => {
         console.log('Signing');
         console.log(email  + ' ' + password);
-        navigate('/StudentDashboard');
+        navigate('/TeacherDashboard');
 
         {/*
 

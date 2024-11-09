@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './AIFlashcardGame.css';
 
 const AIFlashCards = () => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
@@ -19,21 +18,29 @@ const AIFlashCards = () => {
     {
       question: "What is the difference between narrow AI and general AI?",
       answer: "Narrow AI is designed for specific tasks (like playing chess), while general AI would match human-level intelligence across all domains."
+    },
+    {
+      question: "What is a neural network?",
+      answer: "A computing system inspired by biological neural networks, designed to recognize patterns in data through layers of interconnected nodes."
+    },
+    {
+      question: "What is 'training data' in AI?",
+      answer: "The initial dataset used to teach an AI model patterns and relationships, helping it learn how to make predictions or decisions."
     }
   ];
 
-  const handleFlip = () => {
-    setIsFlipped(!isFlipped);
+  const handleNext = () => {
+    setCurrentCardIndex((prev) => (prev + 1) % flashCards.length);
+    setIsFlipped(false);
   };
 
   const handlePrevious = () => {
-    setCurrentCardIndex((prevIndex) => (prevIndex === 0 ? flashCards.length - 1 : prevIndex - 1));
+    setCurrentCardIndex((prev) => (prev - 1 + flashCards.length) % flashCards.length);
     setIsFlipped(false);
   };
 
-  const handleNext = () => {
-    setCurrentCardIndex((prevIndex) => (prevIndex === flashCards.length - 1 ? 0 : prevIndex + 1));
-    setIsFlipped(false);
+  const handleFlip = () => {
+    setIsFlipped(!isFlipped);
   };
 
   const handleResponse = (correct) => {
@@ -70,7 +77,7 @@ const AIFlashCards = () => {
               <p>{flashCards[currentCardIndex].answer}</p>
             </div>
           </div>
-        </div>
+    </div>
       </div>
 
       <div className="flex justify-between items-center gap-2 mb-4">
