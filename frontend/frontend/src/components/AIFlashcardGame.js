@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './AIFlashcardGame.css';
 
 const AIFlashCards = () => {
@@ -6,6 +7,7 @@ const AIFlashCards = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [score, setScore] = useState(0);
   const [attempted, setAttempted] = useState(0);
+  const navigate = useNavigate();
 
   const flashCards = [
     {
@@ -57,6 +59,12 @@ const AIFlashCards = () => {
           Score: {score}/{attempted}
         </div>
       </div>
+      <button 
+        onClick={() => {navigate("/StudentDashboard")}}
+        className="w-full px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+      >
+        Back to Dashboard
+      </button>
 
       <div 
         className="w-full bg-white border rounded-lg shadow-sm mb-4 cursor-pointer min-h-64 flex items-center justify-center p-6"
