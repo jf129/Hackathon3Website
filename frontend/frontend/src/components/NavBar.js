@@ -2,13 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home, BookOpen, User } from 'lucide-react'; // Assuming you are using lucide-react for icons
 import './NavBar.css';
+import logo from '../constants/Logo.png'; 
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/">
-          <img src="../path/to/logo.png" alt="Logo" className="logo" />
+          <img src={logo} alt="Logo" className="logo" />
         </Link>
       </div>
       <ul className="navbar-list">
