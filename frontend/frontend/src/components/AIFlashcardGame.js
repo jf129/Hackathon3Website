@@ -3,12 +3,17 @@ import { useNavigate } from 'react-router-dom';
 import './AIFlashcardGame.css';
 
 const AIFlashCards = () => {
+  // State to keep track of the current card index
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
+  // State to determine if the card is flipped
   const [isFlipped, setIsFlipped] = useState(false);
+  // State to keep track of the score
   const [score, setScore] = useState(0);
+  // State to keep track of the number of attempted questions
   const [attempted, setAttempted] = useState(0);
   const navigate = useNavigate();
 
+  // Array of flashcards with questions and answers
   const flashCards = [
     {
       question: "What does AI stand for?",
@@ -24,26 +29,31 @@ const AIFlashCards = () => {
     }
   ];
 
+  // Function to handle flipping the card
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
   };
 
+  // Function to go to the previous card
   const handlePrevious = () => {
     setCurrentCardIndex((prevIndex) => (prevIndex === 0 ? flashCards.length - 1 : prevIndex - 1));
     setIsFlipped(false);
   };
 
+  // Function to go to the next card
   const handleNext = () => {
     setCurrentCardIndex((prevIndex) => (prevIndex === flashCards.length - 1 ? 0 : prevIndex + 1));
     setIsFlipped(false);
   };
 
+  // Function to handle the response to a question
   const handleResponse = (correct) => {
     setScore(prev => correct ? prev + 1 : prev);
     setAttempted(prev => prev + 1);
     handleNext();
   };
 
+  // Function to reset the game
   const resetGame = () => {
     setCurrentCardIndex(0);
     setIsFlipped(false);

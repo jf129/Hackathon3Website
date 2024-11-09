@@ -51,38 +51,45 @@ height: 100%;
 text-align: center;
 `;
 
+// Styled component for a title (h1) with specific styles
 export const Title = styled.h1`
-font-weight: bold;
-margin: 0;
+  font-weight: bold; // Bold text
+  margin: 0; // No margin
 `;
 
+// Styled component for an input field with specific styles
 export const Input = styled.input`
-background-color: #eee;
-border: none;
-padding: 12px 15px;
-margin: 8px 0;
-width: 100%;
+  background-color: #eee; // Light grey background color
+  border: none; // No border
+  padding: 12px 15px; // Padding inside the input field
+  margin: 8px 0; // Margin around the input field
+  width: 100%; // Full width
 `;
 
-
+// Styled component for a button with specific styles
 export const Button = styled.button`
-   border-radius: 20px;
-   border: 1px solid #ffffff;
-   background-color: #02C5CB;
-   color: #ffffff;
-   font-size: 12px;
-   font-weight: bold;
-   padding: 12px 45px;
-   letter-spacing: 1px;
-   text-transform: uppercase;
-   transition: transform 80ms ease-in;
-   &:active{
-       transform: scale(0.95);
-   }
-   &:focus {
-       outline: none;
-   }
+  border-radius: 20px; // Rounded corners
+  border: 1px solid #ffffff; // White border
+  background-color: #02C5CB; // Background color
+  color: #ffffff; // Text color
+  font-size: 12px; // Font size
+  font-weight: bold; // Bold text
+  padding: 12px 45px; // Padding inside the button
+  letter-spacing: 1px; // Spacing between letters
+  text-transform: uppercase; // Uppercase text
+  transition: transform 80ms ease-in; // Smooth transition for transform property
+
+  // Scale down the button slightly when active (clicked)
+  &:active {
+    transform: scale(0.95);
+  }
+
+  // Additional styles for when the button is focused
+  &:focus {
+    outline: none; // Remove default focus outline
+  }
 `;
+
 export const GhostButton = styled(Button)`
 background-color: transparent;
 border-color: #ffffff;

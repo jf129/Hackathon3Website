@@ -1,21 +1,24 @@
 /* StudentDashboard.css */
+
+/* Container for the buttons */
 .button-container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  display: flex; /* Use flexbox layout */
+  justify-content: space-around; /* Distribute space evenly around the buttons */
+  margin-top: 20px; /* Add margin to the top */
 }
 
+/* Styles for the rounded buttons */
 .rounded-button {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  border: none;
-  cursor: pointer;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
+  width: 150px; /* Set the width of the button */
+  height: 150px; /* Set the height of the button */
+  border-radius: 50%; /* Make the button circular */
+  background-size: cover; /* Ensure the background image covers the entire button */
+  background-position: center; /* Center the background image */
+  border: none; /* Remove the border */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  color: white; /* Set the text color to white */
+  font-size: 16px; /* Set the font size */
+  font-weight: bold; /* Make the text bold */
   display: flex;
   align-items: center;
   justify-content: center;

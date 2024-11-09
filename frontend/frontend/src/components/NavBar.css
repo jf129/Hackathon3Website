@@ -1,49 +1,58 @@
 /* Navbar.css */
+
+/* Styles for the navbar container */
 .navbar {
-  width: 100%;
-  background-color: #02C5CB;
-  padding: 1rem;
-  position: fixed;
-  top: 0;
-  left: 0;
+  width: 100%; /* Full width */
+  background-color: #02C5CB; /* Background color */
+  padding: 1rem; /* Padding around the navbar */
+  position: fixed; /* Fixed position at the top */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
   z-index: 1000; /* Ensure it stays on top of other content */
-  display: flex;
-  align-items: center;
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
 }
 
+/* Styles for the logo container */
 .navbar-logo {
-  margin-right: auto;
+  margin-right: auto; /* Pushes the logo to the left */
 }
 
+/* Styles for the logo image */
 .logo {
   height: 40px; /* Adjust the size as needed */
 }
 
+/* Styles for the navbar list */
 .navbar-list {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Flexbox layout */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
+/* Styles for each navbar item */
 .navbar-item {
-  margin-left: 20px;
+  margin-left: 20px; /* Space between items */
 }
 
+/* Styles for the navbar links */
 .navbar-link {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2rem; /* Font size */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
 }
 
+/* Hover effect for the navbar links */
 .navbar-link:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underline on hover */
 }
 
+/* Styles for the icons in the navbar links */
 .navbar-icon {
-  margin-right: 8px;
+  margin-right: 8px; /* Space between icon and text */
 }
 
 body {
