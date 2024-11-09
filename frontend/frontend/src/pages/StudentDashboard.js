@@ -1,15 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import "./StudentDashboard.css";
 import SubjectCarousel from '../components/SubjectCarousel';
+import Navbar from '../components/NavBar';
+import './StudentDashboard.css';
 
 const StudentDashboard = () => {
   const navigate = useNavigate();
 
   return (
-
     <div>
-      <h1>Student Dashboard</h1>
+      <Navbar />
+      <h1 className="text-2xl font-bold">AI Literacy Flash Cards</h1>
       <div className="button-container">
         <button
           className="rounded-button"
