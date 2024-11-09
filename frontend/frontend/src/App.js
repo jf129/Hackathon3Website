@@ -1,14 +1,18 @@
-// frontend/src/App.js
-import React from 'react';
-import DataFetcher from './DataFetcher';
+import React from "react";
+import { Routes, Route } from 'react-router-dom';
+import Auth from './pages/Auth';
+import StudentDashboard from "./pages/StudentDashboard";
+import TeacherDashboard from "./pages/TeacherDashboard";
+
 
 function App() {
-  return (
-    <div className="App">
-      <h1>My React and Node.js App</h1>
-      <DataFetcher />
-    </div>
-  );
+    return (
+        <Routes>
+            <Route path="/" element={<Auth />} />
+            <Route path="/StudentDashboard" element={<StudentDashboard />} />
+            <Route path="/TeacherDashboard" element={<TeacherDashboard />} />
+        </Routes>
+    );
 }
 
 export default App;
