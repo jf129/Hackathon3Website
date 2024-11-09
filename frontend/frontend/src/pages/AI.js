@@ -1,9 +1,10 @@
 import React from 'react';
+import AIFlashCards from '../components/AIFlashcardGame';
 
 const Maths = () => {
   return (
     <div>
-      <h1>AI Page</h1>
+        <AIFlashCards />
     </div>
   );
 };
