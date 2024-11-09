@@ -35,12 +35,12 @@ const StudentDashboard = () => {
     <div>
       <StudentNavbar />
       <div className="p-6 bg-gray-50 min-h-screen">
-        <h1 className="text-2xl font-bold mb-6 text-gray-800">Analytics Dashboard</h1>
+        <h1 className="text-2xl font-bold mb-6 text-gray-800">Analytics</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Line Chart Card */}
             <div className="bg-white rounded-lg shadow-lg p-4">
             <div className="mb-4">
-                <h2 className="text-xl font-semibold text-gray-700">User Growth & Sales</h2>
+                <h2 className="text-xl font-semibold text-gray-700">Your Weekly Activity</h2>
             </div>
             <div className="p-2">
                 <LineChart width={350} height={300} data={lineData}>
@@ -65,7 +65,7 @@ const StudentDashboard = () => {
             {/* Bar Chart Card */}
             <div className="bg-white rounded-lg shadow-lg p-4">
             <div className="mb-4">
-                <h2 className="text-xl font-semibold text-gray-700">Product Performance</h2>
+                <h2 className="text-xl font-semibold text-gray-700">Subject Mastery</h2>
             </div>
             <div className="p-2">
                 <BarChart width={350} height={300} data={barData}>
@@ -92,7 +92,7 @@ const StudentDashboard = () => {
             {/* Pie Chart Card */}
             <div className="bg-white rounded-lg shadow-lg p-4">
             <div className="mb-4">
-                <h2 className="text-xl font-semibold text-gray-700">Device Distribution</h2>
+                <h2 className="text-xl font-semibold text-gray-700">Game Usage</h2>
             </div>
             <div className="p-2">
                 <PieChart width={350} height={300}>

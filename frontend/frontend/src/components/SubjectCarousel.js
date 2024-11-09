@@ -1,24 +1,27 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import './SubjectCarousel.css';
+import Maths from '../constants/Maths.jpg';
+import CompSci from '../constants/CompSci.jpeg';
+import AI from '../constants/AI.jpeg';
 
 const SubjectCarousel = () => {
   const slides = [
     {
-      image: "../constants/Maths.jpg",
-      alt: "Slide 1",
+      image: {Maths},
+      alt: "Maths",
       link: "https://example.com/1",
       title: "Maths"
     },
     {
-      image: "../constants/CompSci.jpeg",
-      alt: "Slide 2",
+      image: {CompSci},
+      alt: "Computer Science",
       link: "https://example.com/2",
       title: "Computer Science"
     },
     {
-      image: "../constants/AI.jpeg",
-      alt: "Slide 3",
+      image: {AI},
+      alt: "Artificial Intelligence",
       link: "https://example.com/3",
       title: "AI Literacy"
     }
