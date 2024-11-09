@@ -1,11 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./StudentDashboard.css";
+import SubjectCarousel from '../components/SubjectCarousel';
 
 const StudentDashboard = () => {
   const navigate = useNavigate();
 
   return (
+
     <div>
       <h1>Student Dashboard</h1>
       <div className="button-container">

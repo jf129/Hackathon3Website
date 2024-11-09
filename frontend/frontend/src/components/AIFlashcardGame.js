@@ -66,12 +66,18 @@ const AIFlashCards = () => {
       </div>
 
       <div 
-        onClick={handleFlip}
         className="w-full bg-white border rounded-lg shadow-sm mb-4 cursor-pointer min-h-64 flex items-center justify-center p-6"
       >
-        <p className="text-lg text-center">
-          {isFlipped ? flashCards[currentCardIndex].answer : flashCards[currentCardIndex].question}
-        </p>
+        <div className="flashcard-container">
+          <div className={`flashcard ${isFlipped ? 'is-flipped' : ''}`} onClick={handleFlip}>
+            <div className="flashcard-front">
+              <p>{flashCards[currentCardIndex].question}</p>
+            </div>
+            <div className="flashcard-back">
+              <p>{flashCards[currentCardIndex].answer}</p>
+            </div>
+          </div>
+    </div>
       </div>
 
       <div className="flex justify-between items-center gap-2 mb-4">
